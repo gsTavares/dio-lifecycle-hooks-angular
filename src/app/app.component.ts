@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lifecycle-hooks-angular';
+  isAlive: boolean = true;
+
+  disposeCheckSample() {
+    this.isAlive = !this.isAlive;
+  }
 }
